@@ -3,21 +3,21 @@
 A simple script to batch convert `.safetensors` models to LCM-LoRA + OpenVINO IR format.  
 `.safetensors` モデルを LCM-LoRA + OpenVINO IR形式へ一括変換するシンプルなスクリプトです。
 
-## Prerequisites / 準備
+## ⚙️ Prerequisites / 準備
 
-Before running the script, make sure your virtual environment (`venv`) is activated and requirements are installed.  
-スクリプトを実行する前に、仮想環境（`venv`）を有効化し、必要なライブラリをインストールしてください。
+### Tested Environment / 動作確認済み環境
+This script has been tested and verified with the following specific version combination to avoid build and compatibility issues.  
+ビルドや互換性の問題を避けるため、以下の特定のバージョンの組み合わせで動作確認を行っています。
 
-```bash
-# Activate your venv (example)
-source venv/bin/activate
-
-# Install dependencies for your python scripts (e.g., optimum, openvino)
-# pip install optimum[openvino] diffusers
-```
-
-Ensure `e_batch_openvino_convert.sh` and `lcm-convert.py` are in the same directory.  
-`e_batch_openvino_convert.sh` と `lcm-convert.py` が同じフォルダ内にあることを確認してください。
+- **Python:** `3.11` *(Note: Python 3.14 caused build issues / 3.14ではビルドエラーが発生したため3.11を推奨)*
+- **transformers:** `4.45.2`
+- **diffusers:** `0.32.2`
+- **accelerate:** `1.2.1`
+- **optimum:** `1.23.3`
+- **optimum-intel:** `1.20.0`
+- **openvino / openvino-tokenizers:** `2024.6.0`
+- **nncf:** `2.13.0`
+- **peft:** *(Latest / バージョン指定なし)*
 
 ## Usage / 使い方
 
