@@ -30,7 +30,7 @@ This script has been tested and verified with the following specific version com
 2. Install the verified versions:  
    検証済みのバージョンを一括でインストールします。
    ```bash
-   pip install transformers==4.45.2 diffusers==0.32.2 accelerate==1.2.1 optimum==1.23.3 optimum-intel==1.20.0 openvino==2024.6.0 openvino-tokenizers==2024.6.0 nncf==2.13.0 peft
+   pip install -r requirements.txt
    ```
 
 ## Usage / 使い方
