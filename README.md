@@ -19,6 +19,20 @@ This script has been tested and verified with the following specific version com
 - **nncf:** `2.13.0`
 - **peft:** *(Latest / バージョン指定なし)*
 
+### Installation / インストール方法
+
+1. Activate your virtual environment (`venv`) with Python 3.11.  
+   Python 3.11の仮想環境（`venv`）を有効化します。
+   ```bash
+   source venv/bin/activate
+   ```
+
+2. Install the verified versions:  
+   検証済みのバージョンを一括でインストールします。
+   ```bash
+   pip install transformers==4.45.2 diffusers==0.32.2 accelerate==1.2.1 optimum==1.23.3 optimum-intel==1.20.0 openvino==2024.6.0 openvino-tokenizers==2024.6.0 nncf==2.13.0 peft
+   ```
+
 ## Usage / 使い方
 
 1. Make the script executable:  
